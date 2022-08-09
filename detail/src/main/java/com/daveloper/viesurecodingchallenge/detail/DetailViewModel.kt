@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.presentation.detail
+package com.daveloper.viesurecodingchallenge.detail
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class DetailViewModel @Inject constructor(
-    private val getArticle: com.daveloper.viesurecodingchallenge.domain.GetArticle,
+    private val getArticle: GetArticle,
     savedStateHandle: SavedStateHandle
 ): ViewModel() {
     data class DetailState(

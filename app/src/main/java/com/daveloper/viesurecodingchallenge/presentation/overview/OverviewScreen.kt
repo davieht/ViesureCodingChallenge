@@ -28,7 +28,7 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import coil.size.Scale
 import com.daveloper.viesurecodingchallenge.R
-import com.daveloper.viesurecodingchallenge.articles
+import com.daveloper.viesurecodingchallenge.previewArticles
 import com.daveloper.viesurecodingchallenge.data.local.database.Article
 import com.daveloper.viesurecodingchallenge.presentation.Screen
 import com.daveloper.viesurecodingchallenge.presentation.utils.customFormat
@@ -143,5 +143,5 @@ private fun ArticleItem(
 @Preview
 @Composable
 private fun ArticleItemPreview() {
-    ArticleItem(articles[0])
+    ArticleItem(previewArticles[0])
 }

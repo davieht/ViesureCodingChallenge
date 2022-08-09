@@ -16,3 +16,5 @@ rootProject.name = "ViesureCodingChallenge"
 include ':app'
 include ':data'
 include ':domain'
+include ':detail'
+include ':utils'

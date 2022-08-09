@@ -16,14 +16,14 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.daveloper.viesurecodingchallenge.data.local.database.Article
+import com.daveloper.viesurecodingchallenge.detail.DetailScreen
 import com.daveloper.viesurecodingchallenge.presentation.Screen
-import com.daveloper.viesurecodingchallenge.presentation.detail.DetailScreen
 import com.daveloper.viesurecodingchallenge.presentation.overview.OverviewScreen
 import com.daveloper.viesurecodingchallenge.ui.theme.ViesureCodingChallengeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import java.time.LocalDate
 
-val articles: List<Article> = listOf(
+val previewArticles: List<Article> = listOf(
     Article(
         1,
         "Title1",

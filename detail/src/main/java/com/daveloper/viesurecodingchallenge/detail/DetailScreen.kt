@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.presentation.detail
+package com.daveloper.viesurecodingchallenge.detail
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.aspectRatio
@@ -26,8 +26,7 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import coil.size.Scale
 import coil.size.Size
-import com.daveloper.viesurecodingchallenge.R
-import com.daveloper.viesurecodingchallenge.presentation.utils.customFormat
+import com.daveloper.viesurecodingchallenge.utils.*
 
 @Composable
 fun DetailScreen(
