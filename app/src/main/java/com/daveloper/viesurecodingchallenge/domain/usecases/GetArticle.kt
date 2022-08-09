@@ -1,7 +1,9 @@
 package com.daveloper.viesurecodingchallenge.domain.usecases
 
-import com.daveloper.viesurecodingchallenge.domain.ArticleRepository
-import com.daveloper.viesurecodingchallenge.domain.entities.Article
+
+import com.daveloper.viesurecodingchallenge.data.domain.ArticleRepository
+import com.daveloper.viesurecodingchallenge.data.local.database.Article
+
 import javax.inject.Inject
 
 class GetArticle @Inject constructor(

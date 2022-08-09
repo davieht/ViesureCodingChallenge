@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.di
+package com.daveloper.viesurecodingchallenge.data.di
 
 import com.daveloper.viesurecodingchallenge.data.remote.ArticleService
 import com.daveloper.viesurecodingchallenge.data.remote.LocalDateAdapter

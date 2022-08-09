@@ -69,27 +69,14 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:2.41"
     testImplementation 'com.google.dagger:hilt-android-testing:2.41'
 
-    // Retrofit
-    implementation "com.squareup.retrofit2:retrofit:2.9.0"
-    implementation "com.squareup.okhttp3:logging-interceptor:4.9.3"
-
     // Timber
     implementation 'com.jakewharton.timber:timber:5.0.1'
-
-    // Moshi
-    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
-    implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
-    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
 
     // Coil
     implementation "io.coil-kt:coil-compose:2.1.0"
 
-    // Room
-    implementation "androidx.room:room-runtime:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
-
-    // Kotlin Extensions and Coroutines support for Room
-    implementation "androidx.room:room-ktx:$room_version"
+    // Features
+    implementation project(":app:data")
 
     // we require this for LocalDate compatibility
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'

@@ -1,0 +1,4 @@
+<resources>
+    <string name="network_error">Network not reachable</string>
+    <string name="unknown_error">An unexpected error occurred</string>
+</resources>

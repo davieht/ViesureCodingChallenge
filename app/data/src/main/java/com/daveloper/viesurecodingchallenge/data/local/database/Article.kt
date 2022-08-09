@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.domain.entities
+package com.daveloper.viesurecodingchallenge.data.local.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

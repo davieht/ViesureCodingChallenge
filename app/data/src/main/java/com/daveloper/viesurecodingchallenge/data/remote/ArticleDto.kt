@@ -1,6 +1,6 @@
 package com.daveloper.viesurecodingchallenge.data.remote
 
-import com.daveloper.viesurecodingchallenge.domain.entities.Article
+import com.daveloper.viesurecodingchallenge.data.local.database.Article
 import com.squareup.moshi.Json
 import java.time.LocalDate
 

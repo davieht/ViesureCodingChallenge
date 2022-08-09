@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ViesureCodingChallenge"
 include ':app'
+include ':app:data'

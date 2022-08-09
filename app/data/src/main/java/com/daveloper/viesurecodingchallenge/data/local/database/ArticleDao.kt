@@ -1,8 +1,6 @@
 package com.daveloper.viesurecodingchallenge.data.local.database
 
 import androidx.room.*
-import com.daveloper.viesurecodingchallenge.domain.entities.Article
-
 
 @Dao
 interface ArticleDao {

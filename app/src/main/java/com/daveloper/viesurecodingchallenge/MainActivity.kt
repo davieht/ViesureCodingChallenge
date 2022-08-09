@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -16,13 +15,12 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.daveloper.viesurecodingchallenge.domain.entities.Article
+import com.daveloper.viesurecodingchallenge.data.local.database.Article
 import com.daveloper.viesurecodingchallenge.presentation.Screen
 import com.daveloper.viesurecodingchallenge.presentation.detail.DetailScreen
 import com.daveloper.viesurecodingchallenge.presentation.overview.OverviewScreen
 import com.daveloper.viesurecodingchallenge.ui.theme.ViesureCodingChallengeTheme
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.CoroutineScope
 import java.time.LocalDate
 
 val articles: List<Article> = listOf(

@@ -29,7 +29,7 @@ import coil.request.ImageRequest
 import coil.size.Scale
 import com.daveloper.viesurecodingchallenge.R
 import com.daveloper.viesurecodingchallenge.articles
-import com.daveloper.viesurecodingchallenge.domain.entities.Article
+import com.daveloper.viesurecodingchallenge.data.local.database.Article
 import com.daveloper.viesurecodingchallenge.presentation.Screen
 import com.daveloper.viesurecodingchallenge.presentation.utils.customFormat
 import kotlinx.coroutines.launch

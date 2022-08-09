@@ -1,23 +1,18 @@
-package com.daveloper.viesurecodingchallenge.di
+package com.daveloper.viesurecodingchallenge.data.di
 
 import android.content.Context
 import androidx.room.Room
+import com.daveloper.viesurecodingchallenge.data.domain.ArticleRepository
 import com.daveloper.viesurecodingchallenge.data.local.database.ArticleDao
 import com.daveloper.viesurecodingchallenge.data.local.database.ArticleDatabase
-import com.daveloper.viesurecodingchallenge.data.local.database.LocalDateConverter
 import com.daveloper.viesurecodingchallenge.data.local.repository.ArticleRepositoryImpl
 import com.daveloper.viesurecodingchallenge.data.remote.ArticleService
-import com.daveloper.viesurecodingchallenge.domain.ArticleRepository
-import com.daveloper.viesurecodingchallenge.domain.usecases.GetArticle
-import com.daveloper.viesurecodingchallenge.domain.usecases.GetArticles
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.Dispatchers
-import java.time.LocalDate
 import javax.inject.Singleton
 import kotlin.coroutines.CoroutineContext
 

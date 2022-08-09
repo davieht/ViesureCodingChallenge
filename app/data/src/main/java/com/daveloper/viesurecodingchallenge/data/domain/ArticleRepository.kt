@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.domain
+package com.daveloper.viesurecodingchallenge.data.domain
 
 import com.daveloper.viesurecodingchallenge.data.local.database.Article
 import com.daveloper.viesurecodingchallenge.data.util.Resource
