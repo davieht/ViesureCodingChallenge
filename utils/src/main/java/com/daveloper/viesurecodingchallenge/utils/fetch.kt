@@ -1,6 +1,5 @@
-package com.daveloper.viesurecodingchallenge.data.util
+package com.daveloper.viesurecodingchallenge.utils
 
-import com.daveloper.viesurecodingchallenge.data.R
 import kotlinx.coroutines.delay
 import retrofit2.HttpException
 import java.io.IOException

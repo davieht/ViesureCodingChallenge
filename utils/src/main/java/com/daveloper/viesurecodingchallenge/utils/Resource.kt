@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.data.util
+package com.daveloper.viesurecodingchallenge.utils
 
 sealed class Resource<T>(
     val data: T? = null

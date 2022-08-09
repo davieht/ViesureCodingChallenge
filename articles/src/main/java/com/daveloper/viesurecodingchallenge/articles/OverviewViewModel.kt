@@ -6,16 +6,16 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.daveloper.viesurecodingchallenge.data.local.database.Article
-import com.daveloper.viesurecodingchallenge.data.util.Resource
-import com.daveloper.viesurecodingchallenge.data.util.UiText
 import com.daveloper.viesurecodingchallenge.domain.GetArticles
+import com.daveloper.viesurecodingchallenge.utils.Resource
+import com.daveloper.viesurecodingchallenge.utils.UiText
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class OverviewViewModel @Inject constructor(
-    private val getArticles: com.daveloper.viesurecodingchallenge.domain.GetArticles
+    private val getArticles: GetArticles
 ) : ViewModel() {
     data class OverviewState(
         val items: List<Article> = emptyList(),

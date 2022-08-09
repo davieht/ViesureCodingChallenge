@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.data.util
+package com.daveloper.viesurecodingchallenge.utils
 
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Composable

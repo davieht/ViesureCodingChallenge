@@ -5,8 +5,8 @@ import com.daveloper.viesurecodingchallenge.data.local.database.Article
 import com.daveloper.viesurecodingchallenge.data.local.database.ArticleDao
 import com.daveloper.viesurecodingchallenge.data.remote.ArticleService
 import com.daveloper.viesurecodingchallenge.data.remote.toArticleList
-import com.daveloper.viesurecodingchallenge.data.util.Resource
-import com.daveloper.viesurecodingchallenge.data.util.fetch
+import com.daveloper.viesurecodingchallenge.utils.Resource
+import com.daveloper.viesurecodingchallenge.utils.fetch
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.CoroutineContext
 
