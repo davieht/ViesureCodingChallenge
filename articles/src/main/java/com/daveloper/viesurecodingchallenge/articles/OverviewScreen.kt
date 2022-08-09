@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.presentation.overview
+package com.daveloper.viesurecodingchallenge.articles
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -22,23 +22,47 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import coil.size.Scale
-import com.daveloper.viesurecodingchallenge.R
-import com.daveloper.viesurecodingchallenge.previewArticles
 import com.daveloper.viesurecodingchallenge.data.local.database.Article
-import com.daveloper.viesurecodingchallenge.presentation.Screen
-import com.daveloper.viesurecodingchallenge.presentation.utils.customFormat
+import com.daveloper.viesurecodingchallenge.utils.customFormat
 import kotlinx.coroutines.launch
+import java.time.LocalDate
+
+val previewArticles: List<Article> = listOf(
+    Article(
+        1,
+        "Title1",
+        "description1",
+        "Author1",
+        LocalDate.now(),
+        "Image"
+    ),
+    Article(
+        2,
+        "Title2",
+        "description2",
+        "Author2",
+        LocalDate.now().plusDays(1),
+        "Image"
+    ),
+    Article(
+        3,
+        "Title3",
+        "description3",
+        "Author3",
+        LocalDate.now().minusDays(1),
+        "Image3"
+    )
+)
+
 
 @Composable
 fun OverviewScreen(
     viewModel: OverviewViewModel = hiltViewModel(),
-    navController: NavController = rememberNavController(),
-    scaffoldState: ScaffoldState = rememberScaffoldState()
+    scaffoldState: ScaffoldState = rememberScaffoldState(),
+    navigateTo: (Int) -> Unit = {}
 ) {
     Box(
         modifier = Modifier.fillMaxSize()
@@ -51,7 +75,7 @@ fun OverviewScreen(
                 ArticleItem(
                     article = it,
                     onItemClick = { id ->
-                        navController.navigate("${Screen.DetailScreen.route}/${id}")
+                        navigateTo(id)
                     }
                 )
             }

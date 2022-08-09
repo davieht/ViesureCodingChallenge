@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.presentation.overview
+package com.daveloper.viesurecodingchallenge.articles
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

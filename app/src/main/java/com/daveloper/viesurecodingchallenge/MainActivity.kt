@@ -15,40 +15,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.daveloper.viesurecodingchallenge.data.local.database.Article
+import com.daveloper.viesurecodingchallenge.articles.OverviewScreen
 import com.daveloper.viesurecodingchallenge.detail.DetailScreen
 import com.daveloper.viesurecodingchallenge.presentation.Screen
-import com.daveloper.viesurecodingchallenge.presentation.overview.OverviewScreen
 import com.daveloper.viesurecodingchallenge.ui.theme.ViesureCodingChallengeTheme
 import dagger.hilt.android.AndroidEntryPoint
-import java.time.LocalDate
-
-val previewArticles: List<Article> = listOf(
-    Article(
-        1,
-        "Title1",
-        "description1",
-        "Author1",
-        LocalDate.now(),
-        "Image"
-    ),
-    Article(
-        2,
-        "Title2",
-        "description2",
-        "Author2",
-        LocalDate.now().plusDays(1),
-        "Image"
-    ),
-    Article(
-        3,
-        "Title3",
-        "description3",
-        "Author3",
-        LocalDate.now().minusDays(1),
-        "Image3"
-    )
-)
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -78,8 +49,10 @@ class MainActivity : ComponentActivity() {
                             ) {
                                 composable(Screen.OverviewScreen.route) {
                                     OverviewScreen(
-                                        navController = navController,
-                                        scaffoldState = scaffoldState
+                                        scaffoldState = scaffoldState,
+                                        navigateTo = { id ->
+                                            navController.navigate("${Screen.DetailScreen.route}/${id}")
+                                        }
                                     )
                                 }
                                 composable(
