@@ -1,6 +1,5 @@
 package com.daveloper.viesurecodingchallenge.data.remote
 
-import com.daveloper.viesurecodingchallenge.data.remote.ArticleDto
 import retrofit2.http.GET
 
 interface ArticleService {

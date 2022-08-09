@@ -7,14 +7,14 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.daveloper.viesurecodingchallenge.data.local.database.Article
-import com.daveloper.viesurecodingchallenge.domain.usecases.GetArticle
+import com.daveloper.viesurecodingchallenge.domain.GetArticle
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class DetailViewModel @Inject constructor(
-    private val getArticle: GetArticle,
+    private val getArticle: com.daveloper.viesurecodingchallenge.domain.GetArticle,
     savedStateHandle: SavedStateHandle
 ): ViewModel() {
     data class DetailState(

@@ -1,8 +1,8 @@
 //package com.daveloper.viesurecodingchallenge.domain.usecases
 //
 //import com.daveloper.viesurecodingchallenge.data.local.repository.testArticlesDao
-//import com.daveloper.viesurecodingchallenge.data.remote.toArticle
-//import com.daveloper.viesurecodingchallenge.data.util.Resource
+//import toArticle
+//import Resource
 //import com.daveloper.viesurecodingchallenge.domain.ArticleRepository
 //import com.daveloper.viesurecodingchallenge.domain.entities.Article
 //import kotlinx.coroutines.runBlocking

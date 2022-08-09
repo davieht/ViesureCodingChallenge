@@ -1,9 +1,9 @@
 //package com.daveloper.viesurecodingchallenge.data.local.repository
 //
-//import com.daveloper.viesurecodingchallenge.data.local.database.ArticleDao
-//import com.daveloper.viesurecodingchallenge.data.remote.ArticleDto
-//import com.daveloper.viesurecodingchallenge.data.remote.ArticleService
-//import com.daveloper.viesurecodingchallenge.data.util.Resource
+//import ArticleDao
+//import ArticleDto
+//import ArticleService
+//import Resource
 //import com.daveloper.viesurecodingchallenge.di.AppModule
 //import com.daveloper.viesurecodingchallenge.di.DatabaseModule
 //import com.daveloper.viesurecodingchallenge.domain.entities.Article

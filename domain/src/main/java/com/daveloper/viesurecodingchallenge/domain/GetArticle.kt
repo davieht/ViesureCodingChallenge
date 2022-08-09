@@ -1,4 +1,4 @@
-package com.daveloper.viesurecodingchallenge.domain.usecases
+package com.daveloper.viesurecodingchallenge.domain
 
 
 import com.daveloper.viesurecodingchallenge.data.domain.ArticleRepository
