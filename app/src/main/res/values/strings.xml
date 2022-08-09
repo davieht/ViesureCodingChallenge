@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ViesureCodingChallenge</string>
+    <string name="network_error">Network not reachable</string>
+    <string name="unknown_error">An unexpected error occurred</string>
+    <string name="author">"Author: "</string>
+    <string name="no_data">Move along, there is nothing to see here.</string>
+</resources>
